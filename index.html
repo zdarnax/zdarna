@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <title>Posicionar imágenes en página</title>
+    <meta charset="utf-8">
+    <link href="css/estilos.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- MASK 1:1 IMAGE -->
+    <section>
+      <h2>En JPG con Mask y picture. Imagen proporción 1:1.</h2>
+
+      <article>
+        <picture>
+          <source srcset="imgs/empresas.jpg,
+                          imgs/empresas@2x.jpg 2x,
+                          imgs/empresas@3x.jpg 3x">
+          <img id="foto" src="imgs/empresas@3x.jpg" alt="menú empresas">
+        </picture>
+        <h3>Empresas</h3>
+        <a href="#" title="Ir a menú para empresas">Ver menú</a>
+      </article>
+    </section>
+
+    <!-- BACKGROUND-IMAGE -->
+    <section>
+      <h2>En JPG con background-image y border-radius</h2>
+
+      <article>
+        <div id="bg-foto"></div>
+        <h3>Empresas</h3>
+        <a href="#" title="Ir a menú para empresas">Ver menú</a>
+      </article>
+    </section>
+
+    <!-- PICTURE 1:1 IMAGE -->
+    <section>
+      <h2>En PNG y picture. Imagen proporción 1:1.</h2>
+
+      <article>
+        <picture>
+          <source srcset="imgs-png/foto-empresas.png,
+                          imgs-png/foto-empresas@2x.png 2x,
+                          imgs-png/foto-empresas@3x.png 3x">
+          <img id="foto-png" src="imgs-png/foto-empresas@3x.png" alt="menú empresas">
+        </picture>
+        <h3>Empresas</h3>
+        <a href="#" title="Ir a menú para empresas">Ver menú</a>
+      </article>
+    </section>
+
+    <!-- MASK 4:3 IMAGE -->
+    <section>
+      <h2>En JPG, con mask y picture. Imagen proporción 4:3.</h2>
+
+      <article>
+        <picture id="container">
+          <source srcset="imgs-apaisadas/empresa@1x.jpg,
+                          imgs-apaisadas/empresa@2x.jpg 2x,
+                          imgs-apaisadas/empresa@3x.jpg 3x">
+          <img id="foto-apaisada" src="imgs-apaisadas/empresa@3x.jpg" alt="menú empresas">
+        </picture>
+        <h3>Empresas</h3>
+        <a href="#" title="Ir a menú para empresas">Ver menú</a>
+      </article>
+    </section>
+
+    <!-- CONFLICTOS -->
+    <section id="conflictos">
+      <h2>¡CONFLICTOS!</h2>
+
+      <div>
+        <article>
+          <picture id="container">
+            <source srcset="imgs-apaisadas/empresa@1x.jpg,
+                            imgs-apaisadas/empresa@2x.jpg 2x,
+                            imgs-apaisadas/empresa@3x.jpg 3x">
+            <img id="foto-apaisada" src="imgs-apaisadas/empresa@3x.jpg" alt="menú empresas">
+          </picture>
+          <h3>Empresas</h3>
+          <a href="#" title="Ir a menú para empresas">Ver menú</a>
+        </article>
+  
+        <article>
+          <picture id="container">
+            <source srcset="imgs-apaisadas/empresa@1x.jpg,
+                            imgs-apaisadas/empresa@2x.jpg 2x,
+                            imgs-apaisadas/empresa@3x.jpg 3x">
+            <img id="foto-apaisada" src="imgs-apaisadas/empresa@3x.jpg" alt="menú empresas">
+          </picture>
+          <h3>Empresas</h3>
+          <a href="#" title="Ir a menú para empresas">Ver menú</a>
+        </article>
+  
+        <article>
+          <picture id="container">
+            <source srcset="imgs-apaisadas/empresa@1x.jpg,
+                            imgs-apaisadas/empresa@2x.jpg 2x,
+                            imgs-apaisadas/empresa@3x.jpg 3x">
+            <img id="foto-apaisada" src="imgs-apaisadas/empresa@3x.jpg" alt="menú empresas">
+          </picture>
+          <h3>Empresas</h3>
+          <a href="#" title="Ir a menú para empresas">Ver menú</a>
+        </article>
+      </div>
+      
+    </section>
+
+  </body>
+</html>
